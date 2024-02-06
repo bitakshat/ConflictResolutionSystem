@@ -13,6 +13,7 @@ let recordCount = 4;
 function App() {
   return (
     <div className="m-10">
+      <h1 className="text-center text-3xl underline text-gray-600 uppercase font-bold">Conflict Resolution System</h1>
       <h1 className="text-2xl">Upload Summary</h1>
       <div className="flex [&>*]:m-5">
         <FontAwesomeIcon

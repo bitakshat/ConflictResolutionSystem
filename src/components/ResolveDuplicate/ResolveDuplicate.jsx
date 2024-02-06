@@ -25,7 +25,7 @@ const ResolveDuplicate = (props) => {
   return (
     <React.Fragment>
       <h1>{source}</h1>
-      <table className="border-collapse w-full">
+      <table className="border-collapse w-3/4 bg-gray-100 h-40 overflow-y-auto rounded-lg">
         <thead>
           <tr className="[&>*]:p-2 text-left text-gray-500">
             <td></td>
@@ -64,7 +64,8 @@ const ResolveDuplicate = (props) => {
                       <td>{e.details[0].cells.email}</td>
                       <td>{e.details[0].cells.first_name}</td>
                       <td>{e.details[0].cells.last_name}</td>
-                      <td></td>
+                      <td>{e.details[0].cells.id}</td>
+                      {console.log(e.details[0].cells)}
                     </tr>
                     <tr
                       className={`border-spacing-x-0 [&>*]:p-2 ${notSelected}`}
